@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SUPERNOVA - Professional Urdu Audiobook Narrator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;700&family=Cinzel:wght@400;700;900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,300;1,6..96,300&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --cosmic-gold: #d4af37;
+        --deep-slate: #020617;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: var(--deep-slate);
+        color: #f8fafc;
+        overflow-x: hidden;
+      }
+      .nastaliq {
+        font-family: 'Noto Nastaliq Urdu', serif;
+        line-height: 2.2;
+      }
+      .old-money {
+        font-family: 'Cinzel', serif;
+        letter-spacing: 0.1em;
+      }
+      .the-seasons {
+        font-family: 'Bodoni Moda', serif;
+        font-weight: 300;
+        letter-spacing: 0.15em;
+        font-style: italic;
+        text-transform: uppercase;
+      }
+      
+      .supernova-pattern {
+        background-color: #010409;
+        background-image: 
+          radial-gradient(circle at 50% 50%, rgba(251, 146, 60, 0.05) 0%, transparent 60%),
+          url("https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&q=80&w=2000");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 5px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #1e293b;
+        border-radius: 10px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        background: #334155;
+      }
+
+      @keyframes drift {
+        0% { transform: scale(1) translate(0, 0); opacity: 0.2; }
+        50% { transform: scale(1.05) translate(5px, -5px); opacity: 0.4; }
+        100% { transform: scale(1) translate(0, 0); opacity: 0.2; }
+      }
+      .dust-cloud {
+        animation: drift 20s ease-in-out infinite;
+      }
+
+      .transition-all {
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
+      }
+    </style>
+      <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "path": "https://esm.sh/path@^0.12.7",
+    "url": "https://esm.sh/url@^0.11.4",
+    "vite": "https://esm.sh/vite@^7.3.0",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

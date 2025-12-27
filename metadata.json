@@ -1,0 +1,8 @@
+{
+  "name": "SUPERNOVA",
+  "description": "High Fidelity Urdu Linguistic Engine and Audiobook Generator.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
